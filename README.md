@@ -28,9 +28,9 @@ IDfRA uses the ChatGPT via [OpenAI API](https://platform.openai.com/docs/quickst
 ### Scripts
 - ```run_idfra_pipeline.py```: runs end-to-end IDfRA pipeline in simulation 
 - ```pick_and_place_env.py```: custom simulation environment class, modified from [SayCan](https://github.com/google-research/google-research/tree/master/saycan)
-- ```robot_suction.py```: custom simulation environment class 
-- ```utils.py```: misc utils for dimension switch, plots, pictures 
-- ```vlm_resemblance_evaluation.py```: code for running VLM-based quantitative assessment
+- ```robot_suction.py```: custom suction gripper class
+- ```utils.py```: misc functions for dimension switch, plots, pictures 
+- ```vlm_resemblance_evaluation.py```: runs VLM-based quantitative assessment
 
 ## Generating Assembly Structures
 To iteratively generate assemblies using IDfRA, run:
