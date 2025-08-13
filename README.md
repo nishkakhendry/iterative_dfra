@@ -1,8 +1,10 @@
 <h1 align="center">
     Iterative Design for Robotic Assembly (IDfRA)
-    <img alt="giraffe_vid" src="assembly_evolution_video/Giraffe_Assembly_Evolution.gif" width="" />
 </h1>
 
+<p align="center">
+  <img alt="giraffe_vid" src="assembly_evolution_video/Giraffe_Assembly_Evolution.gif" width="400" />
+</p>
 
 # Setup
 
