@@ -10,7 +10,7 @@
 
 ## Installation
 ```
-git clone 
+git clone https://github.com/nishkakhendry/iterative_dfra.git
 conda env create -f environment.yaml
 conda activate idfra
 ```
