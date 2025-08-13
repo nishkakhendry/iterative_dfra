@@ -1,0 +1,17 @@
+{
+    "small-25x25x25-cuboid": {
+      "dimensions": {"x": 25, "y": 25, "z": 25},
+      "shape": "cuboid",
+      "number_available": 5
+    },
+    "small-50x25x25-cuboid": {
+      "dimensions": {"x": 25, "y": 25, "z": 50},
+      "shape": "cuboid",
+      "number_available": 5
+    },
+    "large-100x25x25-cuboid": {
+      "dimensions": {"x": 100, "y": 25, "z": 25},
+      "shape": "cuboid",
+      "number_available": 1
+    }
+  }

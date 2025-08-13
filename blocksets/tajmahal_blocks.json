@@ -1,0 +1,27 @@
+{
+    "small-25x25x50-cuboid": {
+      "dimensions": {"x": 25, "y": 25, "z": 50},
+      "shape": "cuboid",
+      "number_available": 4
+    },
+    "large-50x50x50-cuboid": {
+        "dimensions": {"x": 50, "y": 50, "z": 50},
+        "shape": "cuboid",
+        "number_available": 1
+      },
+    "large-130x130x20-cuboid": {
+      "dimensions": {"x": 130, "y": 130, "z": 20},
+      "shape": "cuboid",
+      "number_available": 1
+    },
+    "large-80x80x10-cylinder": {
+      "dimensions": {"radius": 40, "height": 10},
+      "shape": "cylinder",
+      "number_available": 2
+    },
+    "large-90x70x20-cuboid": {
+        "dimensions": {"x": 90, "y": 70, "z": 20},
+      "shape": "cuboid",
+      "number_available": 1
+    }
+}

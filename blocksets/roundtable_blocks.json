@@ -1,0 +1,12 @@
+{
+    "small-15x15x40-cuboid": {
+      "dimensions": {"x": 15, "y": 15, "z": 40},
+      "shape": "cuboid",
+      "number_available": 6
+    },
+    "small-80x80x10-cylinder": {
+      "dimensions": {"radius": 40, "height": 10},
+      "shape": "cylinder",
+      "number_available": 1
+    }
+}

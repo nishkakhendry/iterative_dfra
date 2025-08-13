@@ -1,0 +1,17 @@
+{
+    "small-40x40x30-cylinder": {
+      "dimensions": {"radius": 20, "height": 30},
+      "shape": "cylinder",
+      "number_available": 2
+    },
+    "small-50x50x30-cylinder": {
+      "dimensions": {"radius": 25, "height": 30},
+      "shape": "cylinder",
+      "number_available": 2
+    },
+  "large-60x60x30-cylinder": {
+      "dimensions": {"radius": 30, "height": 30},
+      "shape": "cylinder",
+      "number_available": 2
+    }
+}

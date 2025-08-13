@@ -1,0 +1,17 @@
+{
+    "small-15x15x20-cuboid": {
+      "dimensions": {"x": 15, "y": 15, "z": 20},
+      "shape": "cuboid",
+      "number_available": 2
+    },
+    "small-15x15x40-cuboid": {
+      "dimensions": {"x": 15, "y": 15, "z": 40},
+      "shape": "cuboid",
+      "number_available": 2
+    },
+  "large-70x70x30-cylinder": {
+      "dimensions": {"radius": 35, "height": 30},
+      "shape": "cylinder",
+      "number_available": 2
+    }
+}
