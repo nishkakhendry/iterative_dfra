@@ -21,7 +21,7 @@ dependencies:
       - annotated-types==0.7.0
       - anyio==4.9.0
       - beautifulsoup4==4.13.4
-      - bloxnet==0.0.1
+      - prompting_and_structure==0.0.1
       - cairocffi==1.7.1
       - certifi==2025.6.15
       - cffi==1.17.1

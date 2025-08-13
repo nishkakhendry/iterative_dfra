@@ -1,13 +1,17 @@
 import pybullet_data
 import os
 from moviepy.editor import ImageSequenceClip
-
-from constants import *
 from robot_suction import SuctionGripper
-
-from scripts.run_pipeline_single_obj_parallel import main_run_pipeline_single_obj_parallel, store_assembly
-from bloxnet.pipelines.whole_structure import get_outcome_reason, replan_assembly
+from prompting_and_structure.utils.assembly_utils import generate_initial_assembly, store_assembly
+from prompting_and_structure.pipelines.whole_structure import get_outcome_reason, replan_assembly
 from utils import *
+import numpy as np
+
+# environment constants
+COLORS = {"blue":   (78/255,  121/255, 167/255, 255/255),"green":  (89/255,  169/255,  79/255, 255/255)}
+PIXEL_SIZE = 0.00267857
+BOUNDS = np.float32([[-0.3, 0.3], [-0.8, -0.2], [0, 0.15]])  # X Y Z
+
 
 # Custom pick-and-place environment class using PyBullet
 class PickPlaceEnv():
@@ -56,7 +60,8 @@ class PickPlaceEnv():
         assembly = replan_assembly(to_build=user_input,json_file=self.blockset_json_file,outcome_reason=missing_suggestions,plans_so_far=str(plans_so_far),seq_iter=seq_iter)
       else:
         # Generate initial assembly using simplified BloxNet
-        assemblies = main_run_pipeline_single_obj_parallel(user_input.lower(),num_structures=1,max_workers=4,json_file=self.blockset_json_file)
+        # assemblies = main_run_pipeline_single_obj_parallel(user_input.lower(),num_structures=1,max_workers=4,json_file=self.blockset_json_file)
+        assembly = generate_initial_assembly(user_input.lower(), json_file=self.blockset_json_file)
 
       missing_blocks = []
       if seq_iter != 0:
@@ -70,7 +75,7 @@ class PickPlaceEnv():
         plans_so_far[f"iteration{seq_iter}"] = initial_plan     
 
         #  Log and read action plan for initial assembly
-        store_assembly(assembly=assemblies[0], seq_iter=seq_iter)
+        store_assembly(assembly=assembly, seq_iter=seq_iter)
         structure_list = load_from_json(f"./gpt_caching/{structure_dir_name}/initial_assembly_{0}/structure.json")
       print("------------- Plan generated, saved, and structure loaded -------------")
 

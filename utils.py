@@ -7,7 +7,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from scipy.spatial.transform import Rotation
 import pybullet
-from bloxnet.pipelines.whole_structure import save_pybullet_img_position_plan
+from prompting_and_structure.pipelines.whole_structure import save_pybullet_img_position_plan
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
