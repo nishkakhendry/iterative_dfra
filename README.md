@@ -23,11 +23,11 @@ IDfRA uses the ChatGPT via [OpenAI API](https://platform.openai.com/docs/quickst
 
 ## Repository Structure
 ### Directories
-- ```prompting_and_structure/```: extensively modified code from BloxNet for prompting GPT, structural functions
+- ```prompting_and_structure/```: modified code from [BloxNet](https://github.com/Apgoldberg1/blox-net-coderelease.git) for GPT prompting, structural functions
 - ```blocksets/```: all blocksets used for assembly generation
 ### Scripts
 - ```run_idfra_pipeline.py```: runs end-to-end IDfRA pipeline in simulation 
-- ```pick_and_place_env.py```: custom simulation environment class 
+- ```pick_and_place_env.py```: custom simulation environment class, modified from [SayCan](https://github.com/google-research/google-research/tree/master/saycan)
 - ```robot_suction.py```: custom simulation environment class 
 - ```utils.py```: misc utils for dimension switch, plots, pictures 
 - ```vlm_resemblance_evaluation.py```: code for running VLM-based quantitative assessment
