@@ -16,7 +16,7 @@ conda activate idfra
 ```
 
 ## OpenAI API Key
-IDfRA uses the ChatGPT via [OpenAI API](https://platform.openai.com/docs/quickstart#create-and-export-an-api-key): create a file named ```.env``` in the root directory of the repository and include ```OPENAI_API_KEY=[your api key]```
+IDfRA uses the GPT-4o for all LLM and VLM functionalities via [OpenAI API](https://platform.openai.com/docs/quickstart#create-and-export-an-api-key): create a file named ```.env``` in the root directory of the repository and include ```OPENAI_API_KEY=[your api key]```
 
 
 # Running IDfRA
