@@ -6,6 +6,8 @@
   <img alt="giraffe_vid" src="assembly_evolution_video/execution_grid.gif" width="300" />
 </p>
 
+Official codebase for the paper titled "IDfRA: Self-Verification for Iterative Design in Robotic Assembly" (ICRA 2026)
+
 # Setup
 
 ## Installation
