@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="giraffe_vid" src="assembly_evolution_video/Giraffe_Assembly_Evolution.gif" width="300" />
+  <img alt="giraffe_vid" src="assembly_evolution_video/execution_grid.gif" width="300" />
 </p>
 
 # Setup
